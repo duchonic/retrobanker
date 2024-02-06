@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/duchonic/Documents/work/gamedev/retrobanker/build",
+  "command": "/usr/bin/clang++ -I/Users/duchonic/Documents/work/gamedev/retrobanker/. -I/Library/Frameworks/SDL2.framework/Versions/A/Headers -I/Library/Frameworks/SDL2_image.framework/Versions/A/Headers -I/Library/Frameworks/SDL2_ttf.framework/Versions/A/Headers -F/Library/Frameworks -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.2 -o CMakeFiles/Sandbox.dir/src/main.cpp.o -c /Users/duchonic/Documents/work/gamedev/retrobanker/src/main.cpp",
+  "file": "/Users/duchonic/Documents/work/gamedev/retrobanker/src/main.cpp",
+  "output": "CMakeFiles/Sandbox.dir/src/main.cpp.o"
+}
+]

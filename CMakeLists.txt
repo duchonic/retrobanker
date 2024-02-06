@@ -6,7 +6,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 project(Sandbox VERSION 1.0.0)
 
-add_executable(Sandbox main.cpp)
+include_directories(.)
+
+add_executable(Sandbox src/main.cpp)
 
 target_link_libraries(
   Sandbox PRIVATE

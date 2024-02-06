@@ -1,8 +1,9 @@
 #pragma once
 #include <SDL.h>
-#include "EventReceiver.h"
-#include "Application.h"
 #include <iostream>
+
+#include "src/EventReceiver.h"
+#include "src/Application.h"
 
 #include <SDL_ttf.h>
 
@@ -81,9 +82,8 @@ private:
     void Update()
     {
         auto [r, g, b, a]{isHovered ? HoverColor : BGColor};
-        // SDL_FillRect(SDLWindowSurface,&Rect,SDL_MapRGB(SDLWindowSurface->format, r, g, b));
 
-        SDL_Surface *textSurface = TTF_RenderUTF8_Blended(TTF_OpenFont("RobotoMono-Bold.ttf", 12), id.c_str(), {0, 0, 0});
+        SDL_Surface *textSurface = TTF_RenderUTF8_Blended(TTF_OpenFont("../assets/RobotoMono-Bold.ttf", 12), id.c_str(), {0, 0, 0});
 
         SDL_FillRect(SDLWindowSurface, &Rect, SDL_MapRGB(SDLWindowSurface->format, r, g, b));
         if (textSurface == nullptr)

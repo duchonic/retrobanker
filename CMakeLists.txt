@@ -4,9 +4,15 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED YES)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+set(DCMAKE_CXX_FLAGS="-Werror -Wall -Wextra")
+
 project(Sandbox VERSION 1.0.0)
 
-include_directories(.)
+include_directories(
+  .
+  /Library/Frameworks/SDL2.framework/Headers/*
+)
+
 
 add_executable(Sandbox src/main.cpp)
 

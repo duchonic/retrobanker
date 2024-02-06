@@ -1,3 +1,13 @@
+/**
+ * @file Application.h
+ * @author your name (you@domain.com)
+ * @brief 
+ * @version 0.1
+ * @date 2024-02-06
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
 #pragma once
 #include <SDL.h>
 #include "Window.h"
@@ -5,7 +15,7 @@
 class Application
 {
 public:
-    Application(Window *Window) : mWindow{Window}
+    explicit inline Application(Window *Window) : mWindow{Window}
     {
     }
 
